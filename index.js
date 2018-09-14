@@ -27,4 +27,5 @@ function currentLine(katzDeliLine) {
     greeting.concat(counter) << `. ${katzDeliLine[i]} `
     counter++
   }
+  return greeting
 }
