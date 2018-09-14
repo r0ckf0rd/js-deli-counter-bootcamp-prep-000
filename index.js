@@ -24,8 +24,13 @@ function currentLine(katzDeliLine) {
   var counter = 1;
   var greeting = "The line is currently: "
   for (var i = 0; i < katzDeliLine.length; i++) {
-    greeting = greeting + `, ${counter}. ${katzDeliLine[i]}`
+    if (i === (katzDeliLine.length - 1)) {
+      greeting = greeting + `${counter}. ${katzDeliLine[i]}`
+    }
+    else {
+    greeting = greeting + `${counter}. ${katzDeliLine[i]},`
     counter++
+    }
   }
   return greeting
 }
