@@ -28,7 +28,7 @@ function currentLine(katzDeliLine) {
       greeting = greeting + `${counter}. ${katzDeliLine[i]}`
     }
     else {
-    greeting = greeting + `${counter}. ${katzDeliLine[i]},`
+    greeting = greeting + `${counter}. ${katzDeliLine[i]}, `
     counter++
     }
   }
