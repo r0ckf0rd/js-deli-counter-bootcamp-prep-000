@@ -24,6 +24,7 @@ function currentLine(katzDeliLine) {
   var counter = 1;
   var greeting = "The line is currently: "
   for (var i = 0; i < katzDeliLine.length; i++) {
-    greeting.concat(counter) << `. ${katzDeliLine[i]} ` 
+    greeting.concat(counter) << `. ${katzDeliLine[i]} `
+    counter++
   }
 }
